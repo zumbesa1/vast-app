@@ -16,12 +16,13 @@ export class DropdownDirective {
   
       if (!this.isOpen) {
         this.renderer.addClass(dropdown, 'show');
+        this.isOpen = true;
         document.addEventListener('click', this.documentClickListener);
       } else {
         this.renderer.removeClass(dropdown, 'show');
+        this.isOpen = false;
         document.removeEventListener('click', this.documentClickListener);
       }
-      this.isOpen = !this.isOpen;
     } 
 
     private documentClickListener = (event: MouseEvent) => {
