@@ -3,7 +3,11 @@
       <a class="navbar-brand" href="#">
         <img class="logo" src="assets/images/logo/V-icon.png" alt="Bootstrap" height="65">
       </a>
-      <button class="navbar-toggler text-white " type="button" data-bs-toggle="offcanvas" data-bs-target="#ofcanvasSidebar" aria-controls="ofcanvasSidebar">
+      <button 
+        class="navbar-toggler text-white " 
+        type="button" 
+        data-bs-toggle="offcanvas" 
+        data-bs-target="#ofcanvasSidebar" aria-controls="ofcanvasSidebar" appOffcanvas>
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="offcanvas offcanvas-start" tabindex="-1" id="ofcanvasSidebar" aria-labelledby="ofcanvasSidebarLabel">
@@ -11,7 +15,7 @@
             <div id="ofcanvasSidebarLabel" class="d-flex justify-content-center">
                 <img  src="assets/images/logo/cropped-V.png" alt="Bootstrap" height="50" >
             </div>
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close" data-bs-target="#ofcanvasSidebar" appOffcanvas></button>
         </div>
         <div class="offcanvas-body justify-content-center">
                 <ul class="navbar-nav">

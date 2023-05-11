@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { DropdownDirective } from './shared/dropdown.directive';
 import { FormsModule } from '@angular/forms';
+import { OffcanvasDirective } from './shared/offcanvas.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    DropdownDirective
+    DropdownDirective,
+    OffcanvasDirective
   ],
   imports: [
     BrowserModule,
