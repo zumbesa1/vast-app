@@ -1,51 +1,63 @@
-<nav class="navbar navbar-expand-lg fixed-top navbar-dark" >
+<nav class="navbar navbar-expand-lg fixed-top navbar-dark">
     <div class="container">
-      <a class="navbar-brand" href="#">
-        <img class="logo" src="assets/images/logo/V-icon.png" alt="Bootstrap" height="65">
-      </a>
-      <button 
-        class="navbar-toggler text-white " 
-        type="button" 
-        data-bs-toggle="offcanvas" 
-        data-bs-target="#ofcanvasSidebar" aria-controls="ofcanvasSidebar" appOffcanvas>
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="offcanvas offcanvas-start" tabindex="-1" id="ofcanvasSidebar" aria-labelledby="ofcanvasSidebarLabel">
-        <div class="offcanvas-header">
-            <div id="ofcanvasSidebarLabel" class="d-flex justify-content-center">
-                <img  src="assets/images/logo/cropped-V.png" alt="Bootstrap" height="50" >
+        <a class="navbar-brand" href="#">
+            <img class="logo" src="assets/images/logo/V-icon.png" alt="Bootstrap" height="65">
+        </a>
+        <button class="navbar-toggler text-white " type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasSidebar" aria-controls="offcanvasSidebar" appOffcanvas>
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-start" id="offcanvasSidebar" tabindex="-1" aria-labelledby="SidebarLabel">
+            <div class="offcanvas-header">
+                <div id="SidebarLabel" class=".sideBarLogo">
+                    <img src="assets/images/logo/cropped-V.png" alt="Bootstrap" height="50">
+                </div>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasSidebar"
+                    aria-controls="offcanvasSidebar" aria-label="Close" appOffcanvas></button>
             </div>
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close" data-bs-target="#ofcanvasSidebar" appOffcanvas></button>
-        </div>
-        <div class="offcanvas-body justify-content-center">
+            <div class="offcanvas-body justify-content-center">
                 <ul class="navbar-nav">
-                  <li class="nav-item dropdown" appDropdown>
-                    <a class="nav-link dropdown-toggle" role="button" aria-current="page" href="#">
-                        About
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Executive Board/Members</a></li>
-                        <li><a class="dropdown-item" href="#">Whitepaper/Pitch</a></li>
-                        <li><a class="dropdown-item" href="#">Roadmap</a></li>
-                        <li><a class="dropdown-item" href="#">Partners</a></li>
-                      </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Press & Media</a>
-                  </li>
-                  <li class="nav-item dropdown" appDropdown>
-                    <a class="nav-link dropdown-toggle" role="button" style="cursor: pointer;">
-                        Vast Token
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Get Vast Token</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Community</a>
-                  </li>
+                    <li class="nav-item dropdown" appDropdown>
+                        <a class="nav-link dropdown-toggle" role="button" aria-current="page" href="#">
+                            About
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li >
+                                <a class="dropdown-item" href="#">Executive Board/Members</a>
+                            </li>
+                            <li >
+                                <a class="dropdown-item" href="#">Whitepaper/Pitch</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Roadmap</a>
+                            </li>
+                            <li >
+                                <a class="dropdown-item" href="#">Partners</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Press & Media</a>
+                    </li>
+                    <li class="nav-item dropdown" appDropdown>
+                        <a class="nav-link dropdown-toggle" role="button" style="cursor: pointer;">
+                            Vast Token
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="#">Get Vast Token</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Another action</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Community</a>
+                    </li>
                 </ul>
             </div>
         </div>
