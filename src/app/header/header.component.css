@@ -1,0 +1,89 @@
+.navbar {
+  background-color: #103255;
+  padding: 0;
+}
+
+.navbar-dark .nav-link {
+  color: #fff;
+}
+
+#ofcanvasSidebarLabel {
+  flex-grow: 1;
+}
+
+
+
+.logo {
+  filter: drop-shadow(0px 4px 5px rgba(255, 255, 255, 0.889));
+}
+
+
+/* Special Button - Bux Real Estate*/
+
+.buy-btn {
+  position: relative;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1em 1.2em;
+  display: inline-block;
+  border-radius: 6em;
+  transition: all .2s;
+  border: none;
+  font-family: inherit;
+  font-weight: 500;
+  color: black;
+  background-color: white;
+ }
+ 
+ .buy-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+ }
+ 
+ .buy-btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+ }
+ 
+ .buy-btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all .4s;
+ }
+ 
+ .buy-btn::after {
+  background-color: #fff;
+ }
+ 
+ .buy-btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+ }
+
+/* Media from 991px and above*/
+ @media (max-width: 991px) {
+  .navbar-dark .nav-link {
+    color: #323232;
+  }
+
+  #ofcanvasSidebar {
+    --bs-offcanvas-width: 300px;
+  }
+}
+
+
+/* Media from 375px and above*/
+@media (max-width: 375px) {
+
+  #ofcanvasSidebar {
+    --bs-offcanvas-width: 200px;
+  }
+}
