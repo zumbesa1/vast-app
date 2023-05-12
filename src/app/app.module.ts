@@ -7,13 +7,21 @@ import { HeaderComponent } from './header/header.component';
 import { DropdownDirective } from './shared/dropdown.directive';
 import { FormsModule } from '@angular/forms';
 import { OffcanvasDirective } from './shared/offcanvas.directive';
+import { AboutComponent } from './pages/about/about.component';
+import { PressComponent } from './pages/press/press.component';
+import { VastTokenComponent } from './pages/vast-token/vast-token.component';
+import { CommunityComponent } from './community/community.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     DropdownDirective,
-    OffcanvasDirective
+    OffcanvasDirective,
+    AboutComponent,
+    PressComponent,
+    VastTokenComponent,
+    CommunityComponent
   ],
   imports: [
     BrowserModule,
