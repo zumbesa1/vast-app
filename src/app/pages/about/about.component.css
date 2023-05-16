@@ -1,0 +1,11 @@
+.card {
+    aspect-ratio: 1 / 1.5;
+    width: 20%;
+    border-radius: 30px;
+    border : 0px;
+    background: #ffffff;
+    box-shadow: 10px 10px 20px #f0f0f0,
+               -10px -10px 20px #ffffff;
+  }
+
+  

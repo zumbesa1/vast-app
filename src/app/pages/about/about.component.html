@@ -1,1 +1,24 @@
-<p>test</p>
+<div>
+  <section class="fluid">
+    <div class="row">
+      <div class="col-md-6 justify-content-center">
+      <p>test</p>
+      </div>
+      <div class="col-md-6 justify-content-center">
+        <p>test</p>
+      </div>
+    </div>
+
+  </section>
+  <section class="secondary">
+    <div class="row justify-content-center">
+      <div class="card m-2 " *ngFor="let member of members">
+        <img [src]="member.picture" />
+        <p>{{ member.name }}</p>
+        <p>{{ member.title }}</p>
+        <p>{{ member.description }}</p>
+        <p>{{ member.roleDescription }}</p>
+      </div>
+    </div>
+  </section>
+</div>

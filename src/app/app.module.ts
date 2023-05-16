@@ -11,6 +11,7 @@ import { AboutComponent } from './pages/about/about.component';
 import { PressComponent } from './pages/press/press.component';
 import { VastTokenComponent } from './pages/vast-token/vast-token.component';
 import { CommunityComponent } from './community/community.component';
+import { MemberService } from './shared/member.service';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,7 @@ import { CommunityComponent } from './community/community.component';
     FormsModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [MemberService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
